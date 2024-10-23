@@ -29,6 +29,7 @@ public class QuestManager : MonoBehaviour
         //set
     }
 
+    //QuestDataSO 정보 설정
     [SerializeField] private List<QuestDataSO> quests;
     /*private int a = 1;
     public int A 
