@@ -24,13 +24,13 @@ public class ObjectPool : MonoBehaviour
             for (int i = 0; i < pool.size; i++)
             {
                 GameObject obj = Instantiate(pool.prefab);
-                obj.SetActive(false);
+                obj.SetActive(true);
                 obj_Pool.Add(obj);
             }
             objectPoolsDictionary.Add(pool.tag, obj_Pool);
         }
 
-        
+        Get("Arrow");
     }
 
     public GameObject Get(string key)
@@ -47,12 +47,16 @@ public class ObjectPool : MonoBehaviour
                 obj.SetActive(true);
                 return obj;
             }
+            else
+                return null;
         }
 
+        /*//프리팹에 있는 오브젝트 활용하기
         // 모든 오브젝트가 사용 중일 경우 새로 생성
         GameObject newObj = Instantiate(pools.Find(a => a.tag == key).prefab);
         objectPool.Add(newObj);
-        return newObj;
+        return newObj;*/
+        return null;
     }
 
     public void Release(GameObject obj, string key)

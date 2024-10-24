@@ -350,10 +350,10 @@ MonoBehaviour:
   pools:
   - tag: Arrow
     prefab: {fileID: 5952516327097867361, guid: e85606678243e8d498ef0192880d4bc0, type: 3}
-    size: 300
+    size: 50
   - tag: Monster
     prefab: {fileID: 8154327826482164861, guid: 5bad11c07c6926f40ba92a42b9c95d5f, type: 3}
-    size: 50
+    size: 300
 --- !u!4 &1184730872
 Transform:
   m_ObjectHideFlags: 0
