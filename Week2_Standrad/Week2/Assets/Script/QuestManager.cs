@@ -61,6 +61,7 @@ public class QuestManager : MonoBehaviour
         {
             QuestDataSO quest = quests[i];
             Debug.Log($"Quest {i + 1} - {quest.questName} (최소 레벨 {quest.questRequiredLevel})");
+            quest.Quest_Inform();
         }
     }
 }

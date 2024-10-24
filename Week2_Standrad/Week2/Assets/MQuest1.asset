@@ -16,4 +16,5 @@ MonoBehaviour:
   questRequiredLevel: 70
   questNPC: 2
   questPrerequisites: 
-  monster: 50
+  questTxt: "\uC548\uD61C\uB9B0 \uB9E4\uB2C8\uC800\uB2D8\uC758 \uAFB8\uC900\uACFC\uC81C"
+  monster_Cnt: 50
